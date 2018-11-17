@@ -23,6 +23,8 @@ namespace Final_Project
         public MainWindow()
         {
             InitializeComponent();
+            MenuWindow form = new MenuWindow();
+            form.Show();
         }
     }
 }

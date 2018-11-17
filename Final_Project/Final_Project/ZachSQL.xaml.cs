@@ -15,28 +15,33 @@ using System.Windows.Shapes;
 namespace Final_Project
 {
     /// <summary>
-    /// Interaction logic for MenuWindow.xaml
+    /// Interaction logic for Window1.xaml
     /// </summary>
-    public partial class MenuWindow : Window
+    public partial class ZachSQL : Window
     {
-        public MenuWindow()
+        public ZachSQL()
         {
             InitializeComponent();
         }
 
-        public void LaunchWindow()
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
         {
 
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+
         }
-        private void Button_Zach_Click(object sender, RoutedEventArgs e)
+
+        private void TextBox_TextChanged_2(object sender, TextChangedEventArgs e)
         {
-            ZachSQL form = new ZachSQL();
-            form.Show();
+            
         }
     }
 }

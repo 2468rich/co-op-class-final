@@ -9,7 +9,7 @@
     <Grid>
         <Button x:Name="CamButton" Content="Cam's App" HorizontalAlignment="Left" Margin="75,100,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
         <Button x:Name="GwynButton" Content="Gwyn's App" HorizontalAlignment="Left" Margin="75,150,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="ZachButton" Content="Zach's App" HorizontalAlignment="Left" Margin="75,200,0,0" VerticalAlignment="Top" Width="75"/>
+		<Button x:Name="ZachButton" Content="Zach's App" HorizontalAlignment="Left" Margin="75,200,0,0" VerticalAlignment="Top" Width="75" Click="Button_Zach_Click"/>
         <Button x:Name="ZackButton" Content="Zack's App" HorizontalAlignment="Left" Margin="75,250,0,0" VerticalAlignment="Top" Width="75"/>
         <Button x:Name="SethButton" Content="Seth's App" HorizontalAlignment="Left" Margin="75,300,0,0" VerticalAlignment="Top" Width="75"/>
         <Label Content="Select an App you would like to launch." HorizontalAlignment="Left" Margin="10,43,0,0" VerticalAlignment="Top"/>
