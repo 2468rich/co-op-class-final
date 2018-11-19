@@ -54,6 +54,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="SethScraper.xaml.cs">
+      <DependentUpon>SethScraper.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ZachSQL.xaml.cs">
       <DependentUpon>ZachSQL.xaml</DependentUpon>
     </Compile>
@@ -70,6 +73,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="MenuWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SethScraper.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
