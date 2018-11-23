@@ -38,5 +38,11 @@ namespace Final_Project
             ZachSQL form = new ZachSQL();
             form.Show();
         }
+        
+        private void Button_Seth_Click(object sender, RoutedEventArgs e)
+        {
+            SethsScraper form = new SethsScraper();
+            form.Show();
+        }
     }
 }
