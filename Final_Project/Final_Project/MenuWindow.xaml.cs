@@ -41,7 +41,7 @@ namespace Final_Project
         
         private void Button_Seth_Click(object sender, RoutedEventArgs e)
         {
-            SethScraper form = new SethScraper();
+            SethsScraper form = new SethsScraper();
             form.Show();
         }
     }
