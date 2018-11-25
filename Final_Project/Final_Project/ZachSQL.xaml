@@ -7,20 +7,11 @@
         mc:Ignorable="d"
         Title="Window1" Height="450" Width="800">
 	<Grid>
-		<DataGrid HorizontalAlignment="Left" Height="233" Margin="93,110,0,0" VerticalAlignment="Top" Width="597"/>
-		<TextBox HorizontalAlignment="Left" Height="101" Margin="104,4,0,0" TextWrapping="Wrap" Text="&#x9;&#x9;&#x9;&#x9;&#x9;Address Book&#xA;The table below shows all of the current information.  Below that you can select a mode to either add a new person or change or delete an existing one.  With new entry mode, type in a name and address into the person info section.  With Edit or delete, first select the person from the dropdown.  With edit you can then make your changes in the Name and Address sections.  With either, click save changes and that entry will be updated/deleted respectively.  &#xA;" VerticalAlignment="Top" Width="586" TextChanged="TextBox_TextChanged"/>
-		<TextBox HorizontalAlignment="Left" Height="19" Margin="353,348,0,0" TextWrapping="Wrap" Text="Person Info:" VerticalAlignment="Top" Width="121" TextChanged="TextBox_TextChanged_2"/>
-		<ListBox HorizontalAlignment="Left" Height="19" Margin="218,348,0,0" VerticalAlignment="Top" Width="121">
-			<ListBoxItem Content="" Height="19"/>
-		</ListBox>
-		<RadioButton Content="Edit Mode" HorizontalAlignment="Left" Margin="93,372,0,0" VerticalAlignment="Top"/>
-		<RadioButton Content="Delete Mode" HorizontalAlignment="Left" Margin="93,392,0,0" VerticalAlignment="Top"/>
-		<TextBox HorizontalAlignment="Left" Height="19" Margin="485,372,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="101" TextChanged="TextBox_TextChanged_2"/>
-		<TextBox HorizontalAlignment="Left" Height="19" Margin="592,372,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="98" TextChanged="TextBox_TextChanged_2"/>
-		<TextBox HorizontalAlignment="Left" Height="19" Margin="485,348,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="101" TextChanged="TextBox_TextChanged_2" Text="         Name"/>
-		<TextBox HorizontalAlignment="Left" Height="19" Margin="592,348,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="98" TextChanged="TextBox_TextChanged_2" Text="       Address"/>
-		<Button Content="Save Changes" HorizontalAlignment="Left" Height="20" Margin="353,372,0,0" VerticalAlignment="Top" Width="121"/>
-		<RadioButton Content="New Entry Mode" HorizontalAlignment="Left" Margin="93,352,0,0" VerticalAlignment="Top"/>
+		<DataGrid x:Name="dataGrid" ItemsSource="{Binding}" HorizontalAlignment="Left" Height="233" Margin="93,110,0,0" VerticalAlignment="Top" Width="597" SelectionChanged="DataGrid_SelectionChanged"/>
+		<TextBox HorizontalAlignment="Left" Height="101" Margin="104,4,0,0" TextWrapping="Wrap" Text="&#x9;&#x9;&#x9;&#x9;&#x9;Address Book&#xA;The table below shows all of the current information.  Below that you can select a mode to either add a new person or delete an existing one.  With new entry mode, type in a name and address directly to the table, click your enter key and then his save changes.  With Delete, select the row, click delete and then save changes.&#xA;" VerticalAlignment="Top" Width="586" TextChanged="TextBox_TextChanged"/>
+		<RadioButton x:Name="radio2" Content="Delete Mode" HorizontalAlignment="Left" Margin="93,379,0,0" VerticalAlignment="Top" Checked="radio2_Checked"/>
+		<Button Content="Save Changes" HorizontalAlignment="Left" Height="20" Margin="508,349,0,0" VerticalAlignment="Top" Width="121" Click="Button_Click_1"/>
+		<RadioButton x:Name="radio1" Content="New Entry Mode" HorizontalAlignment="Left" Margin="93,352,0,0" VerticalAlignment="Top" Checked="radio1_Checked"/>
 
 	</Grid>
 </Window>
