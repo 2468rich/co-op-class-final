@@ -74,6 +74,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="GH\Models\CustomerModel.cs" />
+    <Compile Include="GH\ViewModels\CustomerViewModel.cs" />
+    <Compile Include="GH\Views\CustomerView.xaml.cs">
+      <DependentUpon>CustomerView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SethScraper.cs" />
     <Compile Include="SethScraper.Designer.cs">
       <DependentUpon>SethScraper.cs</DependentUpon>
@@ -81,6 +86,10 @@
     <Compile Include="ZachSQL.xaml.cs">
       <DependentUpon>ZachSQL.xaml</DependentUpon>
     </Compile>
+    <Page Include="GH\Views\CustomerView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -135,5 +144,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

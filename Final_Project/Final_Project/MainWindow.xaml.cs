@@ -25,6 +25,7 @@ namespace Final_Project
             InitializeComponent();
             MenuWindow form = new MenuWindow();
             form.Show();
+			this.Hide();
         }
     }
 }

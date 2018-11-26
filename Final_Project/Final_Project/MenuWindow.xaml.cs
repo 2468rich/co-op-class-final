@@ -14,6 +14,8 @@ using System.Windows.Shapes;
 
 namespace Final_Project
 {
+	using GH.Views;
+
     /// <summary>
     /// Interaction logic for MenuWindow.xaml
     /// </summary>
@@ -44,5 +46,11 @@ namespace Final_Project
             SethsScraper form = new SethsScraper();
             form.Show();
         }
-    }
+
+		private void GwynButton_Click(object sender, RoutedEventArgs e)
+		{
+			CustomerView form = new CustomerView();
+			form.Show();
+		}
+	}
 }
